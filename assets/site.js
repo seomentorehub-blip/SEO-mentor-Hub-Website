@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', () => { const button = document.querySelector('.menu-toggle'); const nav = document.querySelector('.nav nav'); if (!button || !nav) return; button.addEventListener('click', () => { const open = nav.classList.toggle('is-open'); button.setAttribute('aria-expanded', open); button.textContent = open ? '×' : '☰'; }); });
